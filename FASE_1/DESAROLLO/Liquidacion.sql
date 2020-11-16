@@ -26,6 +26,7 @@ BEGIN
 		INNER JOIN proyecto AS pro ON pro.id = a.id_proyecto
 		WHERE h.fecha >= f_month AND h.fecha <= l_month
 		AND pro.id = id_proyecto
+		AND h.registro_eliminado = FALSE
 		GROUP BY p.id_rol;
 		
 	ELSE
@@ -37,7 +38,6 @@ BEGIN
 
 END$$
 DELIMITER ;
-
 
 
 

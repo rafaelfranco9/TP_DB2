@@ -86,6 +86,7 @@ CREATE TABLE Horas_Trabajadas (
 	id_participante INT,
 	fecha DATE,
 	horas_cargadas FLOAT,
+	registro_eliminado BOOL DEFAULT FALSE,
 	FOREIGN KEY(id_participante) REFERENCES participante(id)	
 
 );

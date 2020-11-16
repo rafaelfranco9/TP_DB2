@@ -28,7 +28,7 @@ BEGIN
 			ELSE 
 			
 				INSERT INTO Horas_Trabajadas
-				VALUES(id_participante,fecha,horas);
+				VALUES(id_participante,fecha,horas,FALSE);
 		
 			END IF;
 	
@@ -39,6 +39,8 @@ BEGIN
 END$$
 
 DELIMITER ;  
+
+
 
 
 
